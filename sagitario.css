@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #110f0f;
+  background-color: #573070;
+}
+
+.navbar {
+  background-color: #ffffff00;
+  color: #0e0d0d;
+  padding: 10px 20px;
+  text-align: center;
+  position: auto;
+  display: flex;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+#hamburguer-checkbox {
+  display: none;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  .nav-links li {
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  #hamburguer-checkbox:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .hamburguer {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #180027;
+}
+
+.hero {
+  background-image: url("img.br.css.png");
+  background-size: cover;
+  background-position: center;
+  height: 200vh;
+  display: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #44290b;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.5rem;
+}
+
+.about {
+  padding: 2rem;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.services {
+  padding: 2rem;
+}
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background-color: #573070;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 0;
+  width: 400px;
+  overflow: auto;
+}
+.card img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact {
+  padding: 2rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 30%;
+
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  clear: both;
+}
